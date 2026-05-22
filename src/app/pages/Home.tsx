@@ -1,36 +1,25 @@
-import heroBanner from "../../public/images/home-banner.jpg";
-
 import { Link } from "react-router";
-
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
 import { Badge } from "../components/ui/badge";
-
-import {
-  Star,
-  ArrowRight,
-  Clock,
-  Users,
-  Award
-} from "lucide-react";
-
+import { Star, ArrowRight, Clock, Users, Award } from "lucide-react";
 import { menuItems } from "../data/menuData";
-
 import { useCart } from "../context/CartContext";
-
 import { toast } from "sonner";
 
 export function Home() {
 
   const { addToCart } = useCart();
 
-  const featuredDishes = menuItems.filter(
-    (item) => item.isFeatured
-  );
+  const featuredDishes =
+    menuItems.filter(
+      (item) => item.isFeatured
+    );
 
-  const popularFoods = menuItems.filter(
-    (item) => item.isPopular
-  );
+  const popularFoods =
+    menuItems.filter(
+      (item) => item.isPopular
+    );
 
   const handleAddToCart = (
     item: typeof menuItems[0]
@@ -64,45 +53,59 @@ export function Home() {
               rgba(0, 0, 0, 0.5),
               rgba(0, 0, 0, 0.5)
             ),
-            url(${heroBanner})
+            url('/images/home-banner.jpg')
           `
         }}
       >
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+        <div className="
+          max-w-7xl
+          mx-auto
+          px-4
+          sm:px-6
+          lg:px-8
+          text-white
+        ">
 
           <div className="max-w-2xl">
 
-            <h1 className="text-5xl md:text-6xl mb-6 font-bold">
-
+            <h1 className="
+              text-5xl
+              md:text-6xl
+              mb-6
+            ">
               Experience Fine Dining at CraveNest
-
             </h1>
 
-            <p className="text-xl mb-8 text-gray-200 leading-8">
-
-              Savor premium cuisines crafted by
-              world-class chefs in an elegant
-              luxury dining atmosphere.
-
+            <p className="
+              text-xl
+              mb-8
+              text-gray-200
+            ">
+              Savor the finest cuisines crafted by
+              world-class chefs in an elegant atmosphere
             </p>
 
-            <div className="flex flex-wrap gap-4">
+            <div className="
+              flex
+              flex-wrap
+              gap-4
+            ">
 
               <Link to="/menu">
 
                 <Button
                   size="lg"
-                  className="
-                    text-lg
-                    bg-orange-600
-                    hover:bg-orange-700
-                  "
+                  className="text-lg"
                 >
 
-                  Explore Menu
+                  View Menu
 
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  <ArrowRight className="
+                    ml-2
+                    w-5
+                    h-5
+                  " />
 
                 </Button>
 
@@ -138,20 +141,42 @@ export function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-orange-600 text-white">
+      <section className="
+        py-12
+        bg-orange-600
+        text-white
+      ">
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="
+          max-w-7xl
+          mx-auto
+          px-4
+          sm:px-6
+          lg:px-8
+        ">
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="
+            grid
+            grid-cols-1
+            md:grid-cols-3
+            gap-8
+            text-center
+          ">
 
             <div>
 
-              <Clock className="w-12 h-12 mx-auto mb-3" />
+              <Clock className="
+                w-12
+                h-12
+                mx-auto
+                mb-3
+              " />
 
-              <h3 className="text-3xl mb-2 font-bold">
-
+              <h3 className="
+                text-3xl
+                mb-2
+              ">
                 15+
-
               </h3>
 
               <p>
@@ -162,12 +187,18 @@ export function Home() {
 
             <div>
 
-              <Users className="w-12 h-12 mx-auto mb-3" />
+              <Users className="
+                w-12
+                h-12
+                mx-auto
+                mb-3
+              " />
 
-              <h3 className="text-3xl mb-2 font-bold">
-
+              <h3 className="
+                text-3xl
+                mb-2
+              ">
                 50K+
-
               </h3>
 
               <p>
@@ -178,12 +209,18 @@ export function Home() {
 
             <div>
 
-              <Award className="w-12 h-12 mx-auto mb-3" />
+              <Award className="
+                w-12
+                h-12
+                mx-auto
+                mb-3
+              " />
 
-              <h3 className="text-3xl mb-2 font-bold">
-
+              <h3 className="
+                text-3xl
+                mb-2
+              ">
                 25+
-
               </h3>
 
               <p>
@@ -199,27 +236,47 @@ export function Home() {
       </section>
 
       {/* Featured Dishes */}
-      <section className="py-16 bg-gray-50">
+      <section className="
+        py-16
+        bg-gray-50
+      ">
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="
+          max-w-7xl
+          mx-auto
+          px-4
+          sm:px-6
+          lg:px-8
+        ">
 
-          <div className="text-center mb-12">
+          <div className="
+            text-center
+            mb-12
+          ">
 
-            <h2 className="text-4xl mb-4 font-bold">
-
+            <h2 className="
+              text-4xl
+              mb-4
+            ">
               Featured Dishes
-
             </h2>
 
-            <p className="text-gray-600 text-lg">
-
+            <p className="
+              text-gray-600
+              text-lg
+            ">
               Handpicked favorites by our master chefs
-
             </p>
 
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="
+            grid
+            grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-4
+            gap-6
+          ">
 
             {featuredDishes.map((dish) => (
 
@@ -227,10 +284,8 @@ export function Home() {
                 key={dish.id}
                 className="
                   overflow-hidden
-                  hover:shadow-xl
-                  transition-all
-                  duration-300
-                  border-0
+                  hover:shadow-lg
+                  transition-shadow
                 "
               >
 
@@ -243,15 +298,17 @@ export function Home() {
                       w-full
                       h-48
                       object-cover
-                      hover:scale-105
-                      transition-transform
-                      duration-500
                     "
                   />
 
                   {dish.discount && (
 
-                    <Badge className="absolute top-2 right-2 bg-red-500">
+                    <Badge className="
+                      absolute
+                      top-2
+                      right-2
+                      bg-red-500
+                    ">
 
                       {dish.discount}% OFF
 
@@ -263,36 +320,53 @@ export function Home() {
 
                 <CardContent className="p-4">
 
-                  <h3 className="text-lg font-semibold mb-2">
-
+                  <h3 className="
+                    text-lg
+                    mb-2
+                  ">
                     {dish.name}
-
                   </h3>
 
-                  <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-
+                  <p className="
+                    text-sm
+                    text-gray-600
+                    mb-3
+                    line-clamp-2
+                  ">
                     {dish.description}
-
                   </p>
 
-                  <div className="flex items-center justify-between mb-3">
+                  <div className="
+                    flex
+                    items-center
+                    justify-between
+                    mb-3
+                  ">
 
-                    {/* REAL PRICE */}
-                    <span className="text-xl font-bold text-orange-600">
-
+                    <span className="
+                      text-xl
+                      text-orange-600
+                    ">
                       ₹{dish.price}
-
                     </span>
 
-                    {/* Ratings */}
-                    <div className="flex items-center">
+                    <div className="
+                      flex
+                      items-center
+                    ">
 
-                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="
+                        w-4
+                        h-4
+                        fill-yellow-400
+                        text-yellow-400
+                      " />
 
-                      <span className="ml-1 text-sm">
-
+                      <span className="
+                        ml-1
+                        text-sm
+                      ">
                         {dish.rating}
-
                       </span>
 
                     </div>
@@ -300,11 +374,7 @@ export function Home() {
                   </div>
 
                   <Button
-                    className="
-                      w-full
-                      bg-orange-600
-                      hover:bg-orange-700
-                    "
+                    className="w-full"
                     onClick={() =>
                       handleAddToCart(dish)
                     }
@@ -329,25 +399,42 @@ export function Home() {
       {/* Popular Foods */}
       <section className="py-16">
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="
+          max-w-7xl
+          mx-auto
+          px-4
+          sm:px-6
+          lg:px-8
+        ">
 
-          <div className="text-center mb-12">
+          <div className="
+            text-center
+            mb-12
+          ">
 
-            <h2 className="text-4xl mb-4 font-bold">
-
+            <h2 className="
+              text-4xl
+              mb-4
+            ">
               Popular Foods
-
             </h2>
 
-            <p className="text-gray-600 text-lg">
-
+            <p className="
+              text-gray-600
+              text-lg
+            ">
               Customer favorites you can't miss
-
             </p>
 
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="
+            grid
+            grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+            gap-6
+          ">
 
             {popularFoods.map((dish) => (
 
@@ -355,10 +442,8 @@ export function Home() {
                 key={dish.id}
                 className="
                   overflow-hidden
-                  hover:shadow-xl
-                  transition-all
-                  duration-300
-                  border-0
+                  hover:shadow-lg
+                  transition-shadow
                 "
               >
 
@@ -374,38 +459,54 @@ export function Home() {
                     "
                   />
 
-                  <CardContent className="p-4 flex-1">
+                  <CardContent className="
+                    p-4
+                    flex-1
+                  ">
 
-                    <h3 className="font-semibold mb-2">
-
+                    <h3 className="mb-2">
                       {dish.name}
-
                     </h3>
 
-                    <p className="text-sm text-gray-600 mb-2 line-clamp-2">
-
+                    <p className="
+                      text-sm
+                      text-gray-600
+                      mb-2
+                      line-clamp-2
+                    ">
                       {dish.description}
-
                     </p>
 
-                    <div className="flex items-center justify-between">
+                    <div className="
+                      flex
+                      items-center
+                      justify-between
+                    ">
 
-                      {/* REAL PRICE */}
-                      <span className="text-lg font-bold text-orange-600">
-
+                      <span className="
+                        text-lg
+                        text-orange-600
+                      ">
                         ₹{dish.price}
-
                       </span>
 
-                      {/* Ratings */}
-                      <div className="flex items-center">
+                      <div className="
+                        flex
+                        items-center
+                      ">
 
-                        <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                        <Star className="
+                          w-4
+                          h-4
+                          fill-yellow-400
+                          text-yellow-400
+                        " />
 
-                        <span className="ml-1 text-sm">
-
+                        <span className="
+                          ml-1
+                          text-sm
+                        ">
                           {dish.rating}
-
                         </span>
 
                       </div>
@@ -422,8 +523,10 @@ export function Home() {
 
           </div>
 
-          {/* Explore Button */}
-          <div className="text-center mt-8">
+          <div className="
+            text-center
+            mt-8
+          ">
 
             <Link to="/menu">
 
@@ -432,9 +535,13 @@ export function Home() {
                 variant="outline"
               >
 
-                Explore Full Menu
+                View Full Menu
 
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <ArrowRight className="
+                  ml-2
+                  w-5
+                  h-5
+                " />
 
               </Button>
 
