@@ -3,7 +3,7 @@
 A modern premium restaurant website built using React, TypeScript, Tailwind CSS, and Vite.
 
 ## 🚀 Live Demo
-https://cravenest-restaurant-website.vercel.app
+https://6a10a876bf93a687b25487c7--keen-bubblegum-542132.netlify.app/
 
 ## 📂 GitHub Repository
 https://github.com/saminisathish/cravenest-restaurant-website
