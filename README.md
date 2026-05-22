@@ -1,15 +1,15 @@
-### 🍽️ CraveNest Restaurant Website
+## 🍽️ CraveNest Restaurant Website
 
 A modern premium restaurant website built using React, TypeScript, Tailwind CSS, and Vite.
 
-### 🚀 Live Demo
+## 🚀 Live Demo
 https://cravenest-restaurant-website.vercel.app
 
-### 📂 GitHub Repository
+## 📂 GitHub Repository
 https://github.com/saminisathish/cravenest-restaurant-website
 
 
-### ✨ Features
+## ✨ Features
 - Responsive Premium UI
 - Dynamic Menu System
 - Shopping Cart
@@ -20,14 +20,24 @@ https://github.com/saminisathish/cravenest-restaurant-website
 - Mobile Friendly Design
 
 
-### 🛠️ Tech Stack
+## 🛠️ Tech Stack
 - React.js
 - TypeScript
 - Tailwind CSS
 - Vite
 - React Router
 
-### 📸 Screenshots
+## 🔐 Admin Login Credentials
+
+Use the following credentials to access the Admin Dashboard:
+
+Email: admin@cravenest.com
+
+Password: admin123
+
+After login click Dashboard in navbar.
+
+## 📸 Screenshots
 
 Home Page
 <img width="1896" height="4596" alt="cravenest-restaurant-website vercel app_ (1)" src="https://github.com/user-attachments/assets/ab9d08bd-4895-48b8-80df-9d3e0deac8cf" />
@@ -40,9 +50,11 @@ Menu Page
 Cart Page
 <img width="1896" height="1587" alt="cravenest-restaurant-website vercel app_menu (1)" src="https://github.com/user-attachments/assets/85a81156-a76c-43c1-bfc3-41bb7a550f82" />
 
+Dashboard
+<img width="1896" height="2370" alt="cravenest-restaurant-website vercel app_dashboard" src="https://github.com/user-attachments/assets/1bc5e02d-d65a-4012-b4af-27f4b47ad2bf" />
 
 
-### ⚙️ Installation
+## ⚙️ Installation
 
 ```bash
 npm install
@@ -51,6 +63,5 @@ npm run dev
 
 ---
 
-👨‍💻 Developed By
-
+## 👨‍💻 Developed By
 Samundipriya S
