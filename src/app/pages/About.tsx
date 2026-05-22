@@ -1,58 +1,84 @@
 import { Card, CardContent } from "../components/ui/card";
-import { Award, Heart, Users, Target } from "lucide-react";
+
+import {
+  Award,
+  Heart,
+  Users,
+  Target,
+} from "lucide-react";
 
 export function About() {
+
   const team = [
+
     {
-      name: "Chef Marco Romano",
+      name: "Chef Arjun Mehta",
       role: "Executive Chef",
-      image: "https://images.unsplash.com/photo-1697898109582-40f15c65f174?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaGVmJTIwcG9ydHJhaXQlMjBwcm9mZXNzaW9uYWwlMjBjb29raW5nfGVufDF8fHx8MTc3ODgzODA2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      bio: "With over 20 years of culinary expertise, Chef Marco brings passion and innovation to every dish.",
+      image: "/images/chef1.png",
+      bio:
+        "With over 20 years of culinary expertise, Chef Arjun brings authentic Indian flavors and innovation to every dish.",
     },
+
     {
-      name: "Chef Sarah Chen",
+      name: "Chef Rahul Verma",
       role: "Pastry Chef",
-      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sarah&backgroundColor=ffdfbf",
-      bio: "Award-winning pastry chef specializing in French desserts and modern confections.",
+      image: "/images/chef2.png",
+      bio:
+        "Specialized in premium desserts and fusion sweets with a modern gourmet touch.",
     },
+
     {
-      name: "Chef David Martinez",
+      name: "Chef Priya Sharma",
       role: "Sous Chef",
-      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=David&backgroundColor=d1d4f9",
-      bio: "Trained in Michelin-starred kitchens, David ensures excellence in every preparation.",
+      image: "/images/chef3.png",
+      bio:
+        "Expert in luxury fine dining and creative presentation inspired by Indian culinary traditions.",
     },
+
     {
-      name: "Emma Thompson",
+      name: "Chef Ananya Iyer",
       role: "Restaurant Manager",
-      image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Emma&backgroundColor=ffd5dc",
-      bio: "Leading our front-of-house team to deliver exceptional dining experiences.",
+      image: "/images/chef4.png",
+      bio:
+        "Leading our hospitality team to create unforgettable dining experiences with warmth and elegance.",
     },
+
   ];
 
   const values = [
+
     {
       icon: Award,
       title: "Excellence",
-      description: "We strive for perfection in every dish, using only the finest ingredients and time-honored techniques.",
+      description:
+        "We strive for perfection in every dish using the finest ingredients and culinary techniques.",
     },
+
     {
       icon: Heart,
       title: "Passion",
-      description: "Our love for food drives us to create memorable culinary experiences that delight our guests.",
+      description:
+        "Our love for food inspires us to create memorable dining experiences for every guest.",
     },
+
     {
       icon: Users,
       title: "Community",
-      description: "We believe in building lasting relationships with our customers and supporting local producers.",
+      description:
+        "We believe in building strong relationships with our guests and local producers.",
     },
+
     {
       icon: Target,
       title: "Innovation",
-      description: "While respecting tradition, we constantly explore new flavors and modern culinary techniques.",
+      description:
+        "We constantly explore modern flavors while respecting traditional culinary artistry.",
     },
+
   ];
 
   return (
+
     <div className="min-h-screen bg-gray-50">
 
       {/* Header */}
@@ -60,7 +86,7 @@ export function About() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <h1 className="text-5xl mb-4">
+          <h1 className="text-5xl font-bold mb-4">
             About CraveNest
           </h1>
 
@@ -69,6 +95,7 @@ export function About() {
           </p>
 
         </div>
+
       </div>
 
       {/* Our Story */}
@@ -78,48 +105,46 @@ export function About() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
+            {/* Left Content */}
             <div>
 
-              <h2 className="text-4xl mb-6">
+              <h2 className="text-4xl font-bold mb-6">
                 Our Story
               </h2>
 
-              <div className="space-y-4 text-gray-600 text-lg">
+              <div className="space-y-6 text-gray-600 text-lg leading-9 text-justify max-w-2xl">
 
-                <p>
-                  Founded in 2011, CraveNest has been serving exceptional cuisine to food lovers
-                  for over 15 years. What started as a small family restaurant has grown into
-                  one of the most beloved dining destinations in the city.
-                </p>
+  <p>
+    Founded in 2011, CraveNest has been serving exceptional cuisine to food lovers for over 15 years. What started as a small family restaurant has grown into one of India’s most loved luxury dining destinations.
+  </p>
 
-                <p>
-                  Our journey began with a simple vision: to create a place where people could
-                  gather, celebrate, and enjoy extraordinary food made with love and care. Every
-                  dish we serve tells a story of tradition, innovation, and our commitment to
-                  culinary excellence.
-                </p>
+  <p>
+    Our chefs blend authentic Indian flavors with modern culinary techniques to create dishes filled with passion, creativity, and excellence using premium ingredients.
+  </p>
 
-                <p>
-                  Today, we continue to honor our roots while embracing new culinary techniques
-                  and flavors. Our team of talented chefs works tirelessly to bring you dishes
-                  that not only satisfy your taste buds but also create lasting memories.
-                </p>
+  <p>
+    At CraveNest, we believe dining is more than just food — it is about creating memories, celebrating special moments, and bringing people together through extraordinary hospitality.
+  </p>
 
-              </div>
+</div>
+
             </div>
 
+            {/* Right Image */}
             <div>
 
               <img
-                src="https://images.unsplash.com/photo-1758648207365-df458d3e83f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBlbGVnYW50JTIwZGluaW5nfGVufDF8fHx8MTc3ODgzODA2MXww&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop"
                 alt="Restaurant Interior"
-                className="w-full h-[500px] object-cover rounded-lg shadow-lg"
+                className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
               />
 
             </div>
 
           </div>
+
         </div>
+
       </section>
 
       {/* Mission & Vision */}
@@ -129,44 +154,50 @@ export function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-            <Card>
+            {/* Mission */}
+            <Card className="shadow-lg border-0">
 
               <CardContent className="p-8">
 
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+
                   <Target className="w-8 h-8 text-orange-600" />
+
                 </div>
 
-                <h3 className="text-2xl mb-4">
+                <h3 className="text-2xl font-bold mb-4">
                   Our Mission
                 </h3>
 
-                <p className="text-gray-600 text-lg">
-                  To provide our guests with an unforgettable dining experience through exceptional
-                  food, warm hospitality, and a commitment to sustainability. We aim to be more than
-                  just a restaurant – we want to be a cherished part of our community.
+                <p className="text-gray-600 text-lg leading-8">
+
+                  To provide unforgettable dining experiences through premium cuisine, warm hospitality, and world-class service.
+
                 </p>
 
               </CardContent>
 
             </Card>
 
-            <Card>
+            {/* Vision */}
+            <Card className="shadow-lg border-0">
 
               <CardContent className="p-8">
 
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+
                   <Award className="w-8 h-8 text-orange-600" />
+
                 </div>
 
-                <h3 className="text-2xl mb-4">
+                <h3 className="text-2xl font-bold mb-4">
                   Our Vision
                 </h3>
 
-                <p className="text-gray-600 text-lg">
-                  To become the leading restaurant known for culinary innovation, exceptional service,
-                  and sustainable practices. We envision a future where CraveNest is synonymous with
-                  quality dining and memorable experiences for generations to come.
+                <p className="text-gray-600 text-lg leading-8">
+
+                  To become a globally recognized fine-dining destination known for innovation, elegance, and exceptional culinary artistry.
+
                 </p>
 
               </CardContent>
@@ -174,22 +205,24 @@ export function About() {
             </Card>
 
           </div>
+
         </div>
+
       </section>
 
-      {/* Our Values */}
+      {/* Values */}
       <section className="py-16">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center mb-12">
 
-            <h2 className="text-4xl mb-4">
+            <h2 className="text-4xl font-bold mb-4">
               Our Values
             </h2>
 
             <p className="text-gray-600 text-lg">
-              The principles that guide everything we do
+              The principles that define CraveNest
             </p>
 
           </div>
@@ -200,16 +233,18 @@ export function About() {
 
               <Card
                 key={index}
-                className="text-center hover:shadow-lg transition-shadow"
+                className="text-center hover:shadow-xl transition-all duration-300 border-0"
               >
 
                 <CardContent className="p-6">
 
                   <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+
                     <value.icon className="w-8 h-8 text-orange-600" />
+
                   </div>
 
-                  <h3 className="text-xl mb-3">
+                  <h3 className="text-xl font-semibold mb-3">
                     {value.title}
                   </h3>
 
@@ -224,7 +259,9 @@ export function About() {
             ))}
 
           </div>
+
         </div>
+
       </section>
 
       {/* Team Section */}
@@ -234,12 +271,12 @@ export function About() {
 
           <div className="text-center mb-12">
 
-            <h2 className="text-4xl mb-4">
+            <h2 className="text-4xl font-bold mb-4">
               Meet Our Team
             </h2>
 
             <p className="text-gray-600 text-lg">
-              The talented people behind your dining experience
+              The talented people behind your luxury dining experience
             </p>
 
           </div>
@@ -250,18 +287,18 @@ export function About() {
 
               <Card
                 key={index}
-                className="overflow-hidden hover:shadow-lg transition-shadow"
+                className="overflow-hidden hover:shadow-xl transition-all duration-300 border-0"
               >
 
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-72 object-cover"
                 />
 
                 <CardContent className="p-6">
 
-                  <h3 className="text-xl mb-1">
+                  <h3 className="text-xl font-bold mb-1">
                     {member.name}
                   </h3>
 
@@ -269,7 +306,7 @@ export function About() {
                     {member.role}
                   </p>
 
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-gray-600 text-sm leading-6">
                     {member.bio}
                   </p>
 
@@ -280,17 +317,19 @@ export function About() {
             ))}
 
           </div>
+
         </div>
+
       </section>
 
-      {/* Awards & Recognition */}
+      {/* Awards */}
       <section className="py-16 bg-gradient-to-r from-orange-500 to-red-500 text-white">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center mb-12">
 
-            <h2 className="text-4xl mb-4">
+            <h2 className="text-4xl font-bold mb-4">
               Awards & Recognition
             </h2>
 
@@ -306,12 +345,12 @@ export function About() {
 
               <Award className="w-16 h-16 mx-auto mb-4" />
 
-              <h3 className="text-2xl mb-2">
+              <h3 className="text-2xl font-bold mb-2">
                 Best Fine Dining
               </h3>
 
               <p className="text-gray-100">
-                City Food Awards 2025
+                India Culinary Awards 2025
               </p>
 
             </div>
@@ -320,12 +359,12 @@ export function About() {
 
               <Award className="w-16 h-16 mx-auto mb-4" />
 
-              <h3 className="text-2xl mb-2">
-                Michelin Star
+              <h3 className="text-2xl font-bold mb-2">
+                Luxury Dining Excellence
               </h3>
 
               <p className="text-gray-100">
-                Michelin Guide 2024
+                Hospitality Awards 2024
               </p>
 
             </div>
@@ -334,7 +373,7 @@ export function About() {
 
               <Award className="w-16 h-16 mx-auto mb-4" />
 
-              <h3 className="text-2xl mb-2">
+              <h3 className="text-2xl font-bold mb-2">
                 Chef of the Year
               </h3>
 
@@ -345,11 +384,10 @@ export function About() {
             </div>
 
           </div>
+
         </div>
+
       </section>
-
-      {/* Footer */}
-
 
     </div>
   );
